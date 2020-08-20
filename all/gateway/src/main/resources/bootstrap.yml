@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:      discovery:        locator:          enabled: true    nacos:
+      discovery:
+        server-addr: localhost:8848
+server:  port: 80
+logging:
+  level:
+    org.springframework.web: TRACE
